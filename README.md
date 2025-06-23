@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frankie's Bodega 🐕
 
-## Getting Started
+A modern, sophisticated e-commerce website for Frankie's Bodega - an online neighborhood convenience store with a golden retriever theme. Built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Beautiful, responsive design with golden retriever themes
+- **Smooth Animations**: Framer Motion powered animations for engaging user experience
+- **Mobile-First**: Fully responsive design that works on all devices
+- **TypeScript**: Full type safety throughout the application
+- **Component Library**: Built with shadcn/ui for consistent, accessible components
+- **Performance Optimized**: Next.js App Router for optimal performance
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans & Geist Mono
+
+## 🎨 Design Features
+
+- **Golden Retriever Theme**: Warm amber and orange color palette
+- **Sophisticated Animations**: Floating elements, wagging animations, and smooth transitions
+- **Modern UI**: Clean, professional design with excellent UX
+- **Accessibility**: WCAG compliant components and design
+
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd frankies-bodega
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and custom animations
+│   ├── layout.tsx           # Root layout with metadata
+│   └── page.tsx             # Main landing page
+├── components/
+│   ├── ui/                  # shadcn/ui components
+│   ├── hero-section.tsx     # Hero section with animated elements
+│   ├── features-section.tsx # Features showcase
+│   ├── navigation.tsx       # Navigation bar
+│   └── footer.tsx           # Footer component
+└── lib/
+    └── utils.ts             # Utility functions
+```
 
-## Learn More
+## 🎯 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+### Hero Section
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Animated background elements
+- Golden retriever mascot (Frankie)
+- Call-to-action buttons
+- Floating product icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Features Section
 
-## Deploy on Vercel
+- Six key features with animated icons
+- Gradient backgrounds
+- Hover effects and animations
+- Bottom CTA section
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Navigation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Fixed header with backdrop blur
+- Mobile-responsive menu
+- Shopping cart integration
+- Smooth animations
+
+### Footer
+
+- Comprehensive link sections
+- Social media integration
+- Contact information
+- Branded with Frankie's theme
+
+## 🎨 Custom Animations
+
+The site includes several custom CSS animations:
+
+- `animate-float`: Gentle floating motion
+- `animate-wag`: Tail-wagging animation
+- `animate-sparkle`: Sparkling effect
+
+## 🚀 Deployment
+
+This project can be deployed to Vercel, Netlify, or any other Next.js-compatible hosting platform.
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 🔧 Customization
+
+### Colors
+
+The color scheme is defined in `src/app/globals.css` using CSS custom properties. The main colors are:
+
+- Primary: Amber/Orange gradient
+- Background: Warm cream tones
+- Accent: Various colors for different features
+
+### Content
+
+Update the content in each component file to match your business needs:
+
+- `hero-section.tsx`: Main messaging and CTAs
+- `features-section.tsx`: Your key features and benefits
+- `navigation.tsx`: Menu items and branding
+- `footer.tsx`: Contact info and links
+
+## 📱 Responsive Design
+
+The site is fully responsive with breakpoints:
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🎭 Animation Customization
+
+Framer Motion animations can be customized in each component. The animations include:
+
+- Entrance animations (fade in, slide up)
+- Hover effects (scale, rotate)
+- Continuous animations (floating, wagging)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🐕 About Frankie
+
+Frankie is a friendly golden retriever who runs the neighborhood bodega. The website captures his warm, welcoming personality while providing a modern, convenient shopping experience.
+
+---
+
+Built with ❤️ and lots of tail wags by Frankie's Bodega team.

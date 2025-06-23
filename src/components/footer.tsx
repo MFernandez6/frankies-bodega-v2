@@ -10,6 +10,7 @@ import {
   Twitter,
   Instagram,
 } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -25,8 +26,14 @@ export function Footer() {
             className="lg:col-span-1"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-2xl">🐕</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/frankie.jpg"
+                  alt="Frankie"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Frankie&apos;s Bodega</h3>

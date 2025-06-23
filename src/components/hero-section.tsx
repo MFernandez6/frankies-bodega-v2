@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, Heart } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -53,7 +54,7 @@ export function HeroSection() {
             >
               <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-amber-400" />
-                <span>Your Neighborhood's Favorite Online Bodega</span>
+                <span>Your Neighborhood&apos;s Favorite Online Bodega</span>
               </div>
             </motion.div>
 
@@ -65,7 +66,7 @@ export function HeroSection() {
             >
               Welcome to{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
-                Frankie's Bodega
+                Frankie&apos;s Bodega
               </span>
             </motion.h1>
 
@@ -75,9 +76,9 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Your friendly golden retriever's online convenience store. Fresh
-              groceries, household essentials, and everything you need delivered
-              with a wagging tail!
+              Your friendly golden retriever&apos;s online convenience store.
+              Fresh groceries, household essentials, and everything you need
+              delivered with a wagging tail!
             </motion.p>
 
             <motion.div
@@ -132,7 +133,7 @@ export function HeroSection() {
             className="relative"
           >
             <div className="relative">
-              {/* Main hero image placeholder - you can replace with actual Frankie image */}
+              {/* Main hero image with Frankie's photo */}
               <motion.div
                 className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-amber-200 to-orange-200 rounded-2xl relative overflow-hidden"
                 animate={{ y: [0, -10, 0] }}
@@ -145,7 +146,7 @@ export function HeroSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <motion.div
-                      className="w-32 h-32 bg-amber-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+                      className="w-48 h-48 lg:w-64 lg:h-64 bg-amber-300 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden shadow-lg"
                       animate={{ rotate: [0, 5, -5, 0] }}
                       transition={{
                         duration: 3,
@@ -153,12 +154,19 @@ export function HeroSection() {
                         ease: "easeInOut",
                       }}
                     >
-                      <span className="text-4xl">🐕</span>
+                      <Image
+                        src="/images/frankie.jpg"
+                        alt="Frankie the Golden Retriever"
+                        width={256}
+                        height={256}
+                        className="w-full h-full object-cover rounded-full"
+                        priority
+                      />
                     </motion.div>
-                    <h3 className="text-2xl font-bold text-amber-800 mb-2">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-amber-800 mb-3">
                       Frankie
                     </h3>
-                    <p className="text-amber-700">
+                    <p className="text-lg lg:text-xl text-amber-700">
                       Your friendly neighborhood shopkeeper
                     </p>
                   </div>

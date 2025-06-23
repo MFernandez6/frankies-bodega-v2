@@ -81,7 +81,7 @@ export function FeaturesSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Why Choose{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
-              Frankie's Bodega?
+              Frankie&apos;s Bodega?
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
